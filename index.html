@@ -1,1 +1,103 @@
-Needs work!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Work in Progress</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .banner {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            font-size: 1.5em;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        .navbar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 1em;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            padding: 1em;
+            width: 200px;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        A Work in Progress
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#">Courses</a>
+                <div class="dropdown">
+                    <a href="#">Course 1</a>
+                    <a href="#">Course 2</a>
+                    <a href="#">Course 3</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">Projects</a>
+                <div class="dropdown">
+                    <a href="#">Project 1</a>
+                    <a href="#">Project 2</a>
+                    <a href="#">Project 3</a>
+                </div>
+            </li>
+            <li>
+                <a href="#">About</a>
+                <div class="dropdown">
+                    <a href="#">Our Team</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Contact</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
+
